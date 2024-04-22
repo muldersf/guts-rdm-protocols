@@ -1,0 +1,307 @@
+/* Cohort colors */
+
+:root {
+    --color-cohort-a: #86af7e; /* Green */
+    --color-cohort-b: #b18fbb; /* Purple */
+    --color-cohort-c: #7193ab; /* Blue */
+    --color-cohort-d: #d4a588; /* Orange */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Colors for tabs */
+.tab-link:nth-of-type(1) {
+    background-color: var(--color-cohort-a);
+}
+  
+.tab-link:nth-of-type(2) {
+    background-color: var(--color-cohort-b);
+}
+
+.tab-link:nth-of-type(3) {
+    background-color: var(--color-cohort-c);
+}
+
+.tab-link:nth-of-type(4) {
+    background-color: var(--color-cohort-d);
+}
+
+.tab {
+    display: none;
+  }
+
+.tab.active {
+  display: block;
+}
+
+.tabs {
+    margin-left: 40px;
+    margin-bottom: -35px;
+}
+
+  /* Styles for tab links */
+.tab-link {
+    background-color: #f4f4f4;
+    border: none;
+    color: #333;
+    padding: 10px 20px;
+    cursor: pointer;
+    opacity: 0.6;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    height: 40px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .tab-link.active {
+      opacity: 1;
+      z-index: 2;
+  }
+
+  #mainbody {
+    margin-top: 20px;
+}
+
+.mainbox {
+    position: relative; 
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #d9d9d9;
+    width: 1000px;
+    height: 500px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mainbox #timeline {
+    display: flex;
+    flex-wrap: wrap; 
+    padding-left: 20px;
+    padding-top: 40px;
+    margin-bottom: 20px;
+
+}
+
+#arrow1{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#arrow2{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.item {
+    padding-left: 20px;
+    padding-right: 40px;
+    font-weight: bold;
+}
+
+
+a {
+  color: black; 
+  text-decoration: none; 
+}
+
+
+.circle:hover,
+.tab-link:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease; 
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    background: var(--color-cohort-a);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 70px;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.circle-text {
+  position: absolute;
+  text-align: center;
+  font-size: 14px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.donut-text {
+  color: #000000;
+  z-index: 2;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.slice-text {
+  color: #000000;
+  z-index: 2;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.donut-chart {
+    margin-top: 20px;
+    width: 310px;
+    height: 310px;
+    margin-left: 31%;
+    position: absolute; 
+    background-color: transparent;
+    top: calc(50% - 159px);  
+    left: calc(50% - 493px); 
+    z-index: 0;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.inner-circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  z-index: 0;
+  background-color: #d9d9d9; 
+  width: 60%; 
+  height: 60%; 
+  top: 20.5%; 
+  left: 19.7%; 
+}
+
+.slice {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(50% 50%, 100% 50%, 100% 0%, 50% 0%); /* Circular boundary */
+  background-color: transparent;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.slice-text {
+  position: absolute;
+  text-align: center;
+  font-size: 14px;
+  z-index: 2;
+  transform-origin: center; 
+  background-color: transparent;
+}
+
+.slice-container {
+  border-radius: 50%;
+}
+
+#slice1 {
+  background-color: #968e8e;
+  transform: rotate(0deg);
+  scale: 300%;
+  clip-path: polygon(50% 50%, 99% 50%, 70% 15%);
+  border-radius: 50%;
+}
+
+#slice-text-1 {
+  position: absolute;
+  background-color: transparent;
+  top: 29%; 
+  left: 70%;
+  transform: rotate(60deg);
+}
+
+#slice2 {
+  background-color: #fafafa; 
+  transform: rotate(60deg);
+  scale: 300%;
+  clip-path: polygon(50% 50%, 99% 50%, 70% 15%);
+}
+
+#slice-text-2 {
+  position: absolute;
+  background-color: transparent;
+  top: 66%; 
+  left: 79%;
+  transform: rotate(300deg);
+}
+
+#slice3 {
+  background-color: #646161;
+  transform: rotate(120deg);
+  scale: 300%;
+  clip-path: polygon(50% 50%, 99% 50%, 70% 15%);
+}
+
+#slice-text-3 {
+  position: absolute;
+  background-color: transparent;
+  top: 85%; 
+  left: 39%;
+  transform: rotate(0deg);
+}
+
+#slice4 {
+  background-color: #968e8e; 
+  transform: rotate(180deg);
+  scale: 300%;
+  clip-path: polygon(50% 50%, 99% 50%, 70% 15%);
+}
+
+#slice-text-4 {
+  position: absolute;
+  background-color: transparent;
+  top: 65%; 
+  left: 5%;
+  transform: rotate(60deg);
+}
+
+#slice5 {
+  background-color: #fafafa; 
+  scale: 300%;
+  transform: rotate(240deg);
+  clip-path: polygon(50% 50%, 99% 50%, 70% 15%);
+}
+
+#slice-text-5 {
+  position: absolute;
+  background-color: transparent;
+  top: 27%; 
+  left: 11%;
+  transform: rotate(300deg);
+}
+
+#slice6 {
+  background-color: #646161; 
+  scale: 300%;
+  transform: rotate(300deg);
+  clip-path: polygon(50% 50%, 99% 50%, 70% 15%);
+}
+
+#slice-text-6 {
+  position: absolute;
+  background-color: transparent;
+  top: 8%; 
+  left: 41%;
+  transform: rotate(0deg);
+}
+
+
+.slice-container:hover #slice1,
+.slice-container:hover #slice2,
+.slice-container:hover #slice3,
+.slice-container:hover #slice4,
+.slice-container:hover #slice5,
+.slice-container:hover #slice6 {
+  background-color: var(--color-cohort-a); 
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slice-text:hover{
+  cursor: pointer;
+}

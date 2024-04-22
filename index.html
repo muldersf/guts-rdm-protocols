@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <title>GUTS RDM Handbook - Protocols</title>
+
+    <!-- Required Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="assets/style.css"/>
+
+    <!-- Required scripts -->
+    <script src="assets/app.js"></script>
+
+</head>
+
+<body id = "mainbody">
+
+    <div class="tabs">
+        <button id="cohort-a-tab" class="tab-link active" onclick="openTab(event, 'cohort-a')">Cohort A</button>
+        <button id="cohort-b-tab" class="tab-link" onclick="openTab(event, 'cohort-b')">Cohort B</button>
+        <button id="cohort-c-tab" class="tab-link" onclick="openTab(event, 'cohort-c')">Cohort C</button>
+        <button id="cohort-d-tab"class="tab-link" onclick="openTab(event, 'cohort-d')">Cohort D</button>
+    </div> 
+    
+    <div class = "mainbox">
+        <div id = "timeline">
+            <div id="pre" class = "item">
+                <p> Pre Data Collection</p>
+            </div>
+            <div id = 'arrow1' class = "item">
+                <img src="img/icon-right-arrow.svg" alt="Right arrow icon" width="50" height="50" class="icon">
+            </div>
+            <div id = "during" class = "item">
+                <p> Data Collection </p>
+            </div>
+            <div id = 'arrow2' class = "item">
+                <img src="img/icon-right-arrow.svg" alt="Right arrow icon" width="50" height="50" class="icon">
+            </div>
+
+            <div id = "post" class = "item">
+                <p>Post Data Collection</p>
+            </div>
+        </div>
+        <div class = "content">
+            <div id="cohort-a" class="tab active tab-content">
+                <!-- Content for cohort 1 -->
+                <div id="circle1" class = "circle">
+                    <span class="circle-text"> <b>Recruitment</b> </span>
+                </div>
+                <div id="circle2" class = "circle">
+                    <span class = "circle-text">
+                        <b style="font-size: 30px;">A</b> <br>
+                    <span style="font-size: 14px;">entire lab visit</span>
+                    </span> 
+                </div>
+                <div id="circle3" class = "circle">
+                    <span class="circle-text"> <b>Data processing</b> </span>
+                </div>
+                <div class = donut>
+                    <div class="donut-chart">
+                        <div class="slice-container" id="slice-container-1">
+                            <div class="slice" id="slice1"></div>
+                            <span class="slice-text" id = "slice-text-1"> Hormones </span>
+                        </div>
+                        <div class="slice-container" id="slice-container-2">
+                            <div class="slice" id="slice2"></div>
+                            <span class="slice-text" id = "slice-text-2"> ESM </span>
+                        </div>
+                        <div class="slice-container" id="slice-container-3" style = "opacity: 1;">
+                            <div class="slice" id="slice3"></div>
+                            <a href="data/guts-protocols_all-wps_saliva-genetics.pdf" target="_blank" class="slice-link">
+                                <span class="slice-text" id = "slice-text-3"> Genetics </span>
+                            </a>
+                        </div>
+                        <div class="slice-container" id="slice-container-4">
+                            <div class="slice" id="slice4"></div>
+                            <span class="slice-text" id = "slice-text-4"> Qualtrics </span>
+                        </div>
+                        <div class="slice-container" id="slice-container-5">
+                            <div class="slice" id="slice5"></div>
+                            <span class="slice-text" id = "slice-text-5"> EEG </span>
+                        </div>
+                        <div class="slice-container" id="slice-container-6">
+                            <div class="slice" id="slice6"></div>
+                            <span class="slice-text" id = "slice-text-6"> (f)MRI </span>
+                        </div>
+                        <div class="inner-circle"></div>
+                    </div>
+                </div>    
+            </div>
+            
+            <div id="cohort-b" class="tab tab-content">
+                <!-- Content for cohort 2 -->
+                <div id="circle1" class = "circle">
+                    <span class="circle-text"> <b>Recruitment</b> </span>
+                </div>
+                <div id="circle2" class = "circle">
+                    <span class = "circle-text">
+                        <b style="font-size: 30px;">B</b> <br>
+                    <span style="font-size: 14px;">entire lab visit</span>
+                    </span> 
+                </div>
+                <div id="circle3" class = "circle">
+                    <span class="circle-text"> <b>Data processing</b> </span>
+                </div>
+                <div class = donut>
+                    <div class="donut-chart">
+                        <div class="slice-container" id="slice-container-1">
+                            <div class="slice" id="slice1"></div>
+                            <span class="slice-text" id = "slice-text-1"> Hormones </span>
+                        </div>
+                        <div class="slice-container" id="slice-container-2">
+                            <div class="slice" id="slice2"></div>
+                            <span class="slice-text" id = "slice-text-2"> ESM </span>
+                        </div>
+                        <div class="slice-container" id="slice-container-3" style = "opacity: 1;">
+                            <div class="slice" id="slice3"></div>
+                            <a href="data/guts-protocols_all-wps_saliva-genetics.pdf" target="_blank" class="slice-link">
+                                <span class="slice-text" id = "slice-text-3"> Genetics </span>
+                            </a>
+                        </div>
+                        <div class="slice-container" id="slice-container-4">
+                            <div class="slice" id="slice4"></div>
+                            <span class="slice-text" id = "slice-text-4"> Qualtrics </span>
+                        </div>
+                        <div class="slice-container" id="slice-container-5">
+                            <div class="slice" id="slice5"></div>
+                            <span class="slice-text" id = "slice-text-5"> EEG </span>
+                        </div>
+                        <div class="slice-container" id="slice-container-6">
+                            <div class="slice" id="slice6"></div>
+                            <span class="slice-text" id = "slice-text-6"> (f)MRI </span>
+                        </div>
+                        <div class="inner-circle"></div>
+                    </div>
+                </div>  
+            </div>
+            
+            <div id="cohort-c" class="tab tab-content">
+                <!-- Content for cohort 3 -->
+                <div id="circle1" class = "circle">
+                    <span class="circle-text"> <b>Recruitment</b> </span>
+                </div>
+                <div id="circle2" class = "circle">
+                    <span class = "circle-text">
+                        <b style="font-size: 30px;">C</b> <br>
+                    <span style="font-size: 14px;">entire lab visit</span>
+                    </span> 
+                </div>
+                <div id="circle3" class = "circle">
+                    <span class="circle-text"> <b>Data processing</b> </span>
+                </div>
+                <div class = donut>
+                    <div class="donut-chart">
+                        <div class="slice-container" id="slice-container-1">
+                            <div class="slice" id="slice1"></div>
+                            <span class="slice-text" id = "slice-text-1"> Hormones </span>
+                        </div>
+                        <div class="slice-container" id="slice-container-2">
+                            <div class="slice" id="slice2"></div>
+                            <span class="slice-text" id = "slice-text-2"> ESM </span>
+                        </div>
+                        <div class="slice-container" id="slice-container-3" style = "opacity: 1;">
+                            <div class="slice" id="slice3"></div>
+                            <a href="data/guts-protocols_all-wps_saliva-genetics.pdf" target="_blank" class="slice-link">
+                                <span class="slice-text" id = "slice-text-3"> Genetics </span>
+                            </a>
+                        </div>
+                        <div class="slice-container" id="slice-container-4">
+                            <div class="slice" id="slice4"></div>
+                            <span class="slice-text" id = "slice-text-4"> Qualtrics </span>
+                        </div>
+                        <div class="slice-container" id="slice-container-5">
+                            <div class="slice" id="slice5"></div>
+                            <span class="slice-text" id = "slice-text-5"> EEG </span>
+                        </div>
+                        <div class="slice-container" id="slice-container-6">
+                            <div class="slice" id="slice6"></div>
+                            <span class="slice-text" id = "slice-text-6"> (f)MRI </span>
+                        </div>
+                        <div class="inner-circle"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="cohort-d" class="tab tab-content">
+                <!-- Content for cohort 4 -->
+                <div id="circle1" class = "circle">
+                    <span class="circle-text"> <b>Recruitment</b> </span>
+                </div>
+                <div id="circle2" class = "circle">
+                    <span class = "circle-text">
+                        <b style="font-size: 30px;">D</b> <br>
+                    <span style="font-size: 14px;">entire lab visit</span>
+                    </span> 
+                </div>
+                <div id="circle3" class = "circle">
+                    <span class="circle-text"> <b>Data processing</b> </span>
+                </div>
+                <div class = donut>
+                    <div class="donut-chart">
+                        <div class="slice-container" id="slice-container-1">
+                            <div class="slice" id="slice1"></div>
+                            <span class="slice-text" id = "slice-text-1"> Hormones </span>
+                        </div>
+                        <div class="slice-container" id="slice-container-2">
+                            <div class="slice" id="slice2"></div>
+                            <span class="slice-text" id = "slice-text-2"> ESM </span>
+                        </div>
+                        <div class="slice-container" id="slice-container-3" style = "opacity: 1;">
+                            <div class="slice" id="slice3"></div>
+                            <a href="data/guts-protocols_all-wps_saliva-genetics.pdf" target="_blank" class="slice-link">
+                                <span class="slice-text" id = "slice-text-3"> Genetics </span>
+                            </a>
+                        </div>
+                        <div class="slice-container" id="slice-container-4">
+                            <div class="slice" id="slice4"></div>
+                            <span class="slice-text" id = "slice-text-4"> Qualtrics </span>
+                        </div>
+                        <div class="slice-container" id="slice-container-5">
+                            <div class="slice" id="slice5"></div>
+                            <span class="slice-text" id = "slice-text-5"> EEG </span>
+                        </div>
+                        <div class="slice-container" id="slice-container-6">
+                            <div class="slice" id="slice6"></div>
+                            <span class="slice-text" id = "slice-text-6"> (f)MRI </span>
+                        </div>
+                        <div class="inner-circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
