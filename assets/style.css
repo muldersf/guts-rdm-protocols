@@ -66,11 +66,10 @@
     position: relative; 
     margin-top: 20px;
     margin-left: 20px;
-    background-color: #d9d9d9;
+    background-color: transparent;
     width: 1000px;
     height: 500px;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .mainbox #timeline {
